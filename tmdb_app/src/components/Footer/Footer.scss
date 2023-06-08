@@ -1,0 +1,29 @@
+.Footer{
+    min-height: 500px;
+    background-color: rgba(3,37,65, 1.0);
+    display: flex;
+    justify-content: center;
+    .footer_items{
+        display: flex;
+    align-content: space-between;
+    flex-wrap: wrap;
+    margin: 50px;
+        font-weight: bold;
+    font-size: 1.4em;
+    line-height: 1.4em;
+    text-transform: uppercase;
+    color: #fff;
+    white-space: nowrap;
+    } 
+    .items{
+        display: flex;
+    flex-direction: column;
+    margin: 20px;
+    }
+}
+
+.items h4 {
+    margin: 0;
+    font-weight: 400;
+    font-size: 16px;
+}

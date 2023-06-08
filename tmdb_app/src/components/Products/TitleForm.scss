@@ -1,0 +1,63 @@
+.Banner_wrapper{
+    //background-image: url('https://www.themoviedb.org/t/p/w1920_and_h600_multi_faces_filter(duotone,00192f,00baff)/VlHt27nCqOuTnuX6bku8QZapzO.jpg');
+    background-image: linear-gradient(to right, rgba(3,37,65, 0.8) 0%, rgba(3,37,65, 0) 100%), url("https://www.themoviedb.org/t/p/w1920_and_h600_multi_faces_filter(duotone,00192f,00baff)/zqkmTXzjkAgXmEWLRsY4UpTWCeo.jpg");
+    height: 300px;
+    position: relative;
+    .Banner {
+        
+    .Banner_image{
+       
+    height: 300px;
+    width: 1220px;
+    }
+    .title_form{
+        position: absolute;
+    left: 5%;
+    top: 25%;
+    }
+    .Banner_form{
+        display: flex;
+        width: 1230px;
+        height: 76px;
+        .Banner_form_input{
+            border-radius: 50px;
+           
+            width: 1230px;
+    height: 45px;
+        }
+        .search-list{
+            margin-top: 10px;
+            width: 1150px;
+            background-color: #fff;
+            color: black;
+
+            .select-elem{
+               padding: 5px;
+            }
+        }
+        .Form_submit{
+    color: #fff;
+    font-size: 16px;
+    font-weight: 800;
+            position: absolute;
+            border: unset;
+            right: -7px;
+            width: 100px;
+            height: 50px;
+            border-radius: 26px;
+            background: linear-gradient(to right, rgba(30,213,169, 1) 0%, rgba(1,180,228, 1) 100%);
+        }
+    }
+}
+}
+.title_form h2{
+    font-size: 3em;
+    color: white;
+    font-weight: 700;
+}
+
+.title_form h3{
+    font-size: 2em;
+    color: white;
+    font-weight: 400;
+}

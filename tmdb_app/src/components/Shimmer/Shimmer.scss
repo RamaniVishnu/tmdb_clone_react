@@ -1,0 +1,10 @@
+.shimmer_layer{
+    display: flex;
+    .cards{
+        width: 350px;
+        height: 300px;
+        background-color: lightgrey;
+        display: flex;
+        margin: 10px;
+    }
+}
