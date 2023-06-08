@@ -1,0 +1,49 @@
+.header{
+    display: flex;
+    height: 60px;
+    border: 1px solid black;
+    align-items: center;
+    justify-content: space-between;
+
+    /* margin-left: 20px; */
+    background-color: #032541;
+    .nav_items{
+        display: flex;
+        justify-content: space-between;
+        width: 500px;
+        margin-right: 16px;
+        margin-left: 20px;
+        color: white;
+
+        .selection{
+            display: block;
+            width: 100px;
+            background-color: #032541;
+            border: none;
+            color: white;
+            appearance: none;
+            outline: none;
+        }
+    }
+    .login{
+        margin-right: 20px;
+    height: 50px;
+    width: 60px;
+    }
+    
+    .favourite{
+        color: white;
+    }
+}
+
+.nav_items > h2{
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-top: 2px;
+}
+
+.login button {
+    height: 50px;
+    border-radius: 20px;
+    width: 60px;
+}
