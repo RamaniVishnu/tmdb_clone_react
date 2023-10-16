@@ -2,19 +2,18 @@ import {useEffect, useState} from 'react';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
 import './Products.scss';
-import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
 import { addItem } from '../../store/favouriteSlice';
 import { useDispatch, useSelector } from 'react-redux';
 import {IMAGE_PATH} from '../../utils/Constant';
 import Shimmer from '../Shimmer/Shimmer';
 import _defaultImg from '../../assets/default_image.jpg'
+import FavoriteIcon from '@mui/icons-material/Favorite';
 
 function Products(){
     const [data,setData] = useState([]);
     const [pageNum,setPageNum]=useState(1);
     const dispatch = useDispatch();
-    const chumma=useSelector((store)=>store.favouriteSlice.items);
-    console.log("chumma============s",chumma);
+    const favor=useSelector((store)=>store.favouriteSlice.items);
 
     useEffect(()=>{
         axios.get(`https://api.themoviedb.org/3/tv/popular?api_key=23b2395d981664980812d2c0a1ebd44e&language=en-US&page=`+pageNum)
@@ -43,7 +42,7 @@ function Products(){
     </div>
     <div>
     <div className='data_name'> {data.name}
-    <p className='data_air'>{data.first_air_date} <span onClick={()=>dispatch(addItem(data.poster_path))}><FavoriteBorderIcon style={chumma.includes(data.poster_path)?{backgroundColor: 'pink',borderRadius:'2px'}:{}} /></span></p>
+    <p className='data_air'>{data.first_air_date} <span onClick={()=>dispatch(addItem(data.poster_path))}><FavoriteIcon style={favor.includes(data.poster_path)?{color: 'red'}:{color: 'lightgrey'}} /></span></p>
     </div>
     </div>
     </div>
