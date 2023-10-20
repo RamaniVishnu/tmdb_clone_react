@@ -10,7 +10,7 @@ function ProductList() {
 
 
   const toggleItem = (e,elem) => {
-    for (let i=0;i<=3;i++) {
+    for (let i=0;i<values.length;i++) {
           if (e.target !== elem[i]) {
             elem[i].classList.remove('activeheader');
           } else {

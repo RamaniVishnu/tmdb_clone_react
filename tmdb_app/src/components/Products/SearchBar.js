@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import './TitleForm.scss';
 import { cacheResult } from "../../store/SearchSlice";
+import SearchOutlinedIcon from '@mui/icons-material/SearchOutlined';
 
 export default function SearchBar(props){
 
@@ -23,22 +24,29 @@ export default function SearchBar(props){
         props.setSearchQueryId(()=>elem.id);
     }
 
+    const stylingobj={
+        color:"black",
+        listStyle:"none",
+        height: "25px",
+        paddingTop: "10px",
+        display: "flex",
+        marginRight: "8px",
+        marginLeft: "-40px"
+    }
+
     const getSearchSuggestion =async()=>{
-        console.log('timer creation');
         await axios.get(`https://api.themoviedb.org/3/search/movie?query=${searchQuery}&api_key=23b2395d981664980812d2c0a1ebd44e`)
         .then((response)=> {
             let data = response;
-            console.log("search response============",data.data.results);
+            data.data.results.length = 10
             setDataList(data.data.results);
             setshowSuggestion(!showSuggestion);
             dispatch(cacheResult({
                 [searchQuery]: data.data.results
             }))
 
-        console.log(searchList)})
+        })
         .catch((err)=> console.log("err==",err))
-
-        console.log('searchlist==',searchList);
     }
 
     //debouncing to call api
@@ -64,7 +72,7 @@ export default function SearchBar(props){
         ></input>
        <div className="search-list">
        <ul>
-       {showSuggestion && searchList.length > 1 && searchList.map((elem,index) => <li style={{listStyle:"none"}} key={index} onClick={()=>handleSelectSearch(elem)}>{elem.original_title}</li>
+       {showSuggestion && searchList.length > 1 && searchList.map((elem,index) => <li style={stylingobj} key={index} onClick={()=>handleSelectSearch(elem)}><SearchOutlinedIcon style={{fontSize: "20px",marginLeft: "25px"}}/><p style={{margin: "0"}}>{elem.original_title}</p></li>
         )}
         </ul>
         </div>  

@@ -1,6 +1,7 @@
 import { useState,useEffect } from "react";
 import axios from "axios";
 import { Link } from 'react-router-dom';
+import Shimmer from "../Shimmer/Shimmer";
 
 function RentProduct(){
     const [data,setData] = useState([]);
@@ -53,7 +54,7 @@ b.forEach((elem)=>{
     </div>
     ))}
     </div>
-    </> : <div> Products............... the data not obtained</div>
+    </> : <div> <Shimmer /></div>
     )
 
 }
