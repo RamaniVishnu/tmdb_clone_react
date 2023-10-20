@@ -27,6 +27,7 @@
         }
         .search-list{
             margin-top: 10px;
+            border-radius: 20px;
             width: 1150px;
             background-color: #fff;
             color: black;
@@ -34,6 +35,14 @@
             .select-elem{
                padding: 5px;
             }
+
+            ul{ 
+
+                li:hover{
+                    background-color: #E0E0E0;
+                }
+            }
+
         }
         .Form_submit{
     color: #fff;
