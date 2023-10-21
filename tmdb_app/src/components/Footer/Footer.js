@@ -26,24 +26,24 @@ function Footer() {
   return (
     <div className='Footer'>
      <div className='footer_items'>
-     <div className='items'>THE BASICS
+     <div className='items'><h3>THE BASICS</h3>
      {
-        Basics.map((elem,id)=> <h4 key={id}>{elem}</h4> )
+        Basics.map((elem,id)=> <div className="item_list"><h4 key={id}>{elem}</h4></div> )
     }
     </div>
-    <div className='items'>GET INVOLVED
+    <div className='items'><h3>GET INVOLVED</h3>
      {
-        Involved.map((elem,id)=> <h4 key={id}>{elem}</h4> )
+        Involved.map((elem,id)=> <div className="item_list"><h4 key={id}>{elem}</h4></div> )
     }
     </div>
-    <div className='items'>COMMUNITY
+    <div className='items'><h3>COMMUNITY</h3>
      {
-        Community.map((elem,id)=> <h4 key={id}>{elem}</h4> )
+        Community.map((elem,id)=> <div className="item_list"><h4 key={id}>{elem}</h4></div> )
     }
     </div>
-    <div className='items'>LEGAL
+    <div className='items'><h3>LEGAL</h3>
      {
-        Legal.map((elem,id)=> <h4 key={id}>{elem}</h4> )
+        Legal.map((elem,id)=> <div className="item_list"><h4 key={id}>{elem}</h4></div> )
     }
     </div>
     </div>
