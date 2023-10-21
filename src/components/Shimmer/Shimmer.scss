@@ -1,0 +1,21 @@
+.shimmer_layer{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    .cards{
+        width: 250px;
+        height: 320px;
+        background-color: lightgrey;
+        margin: 10px;
+        border-radius: 20px;
+        -webkit-mask: linear-gradient(120deg, #000 25%, #0005, #000 75%) right/250% 100%;
+         animation: shimmer 2.5s infinite;
+         background-repeat: no-repeat;
+      }
+      @keyframes shimmer {
+         100% {
+            -webkit-mask-position: left
+         }
+      }
+}
