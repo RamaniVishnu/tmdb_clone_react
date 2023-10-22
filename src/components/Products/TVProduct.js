@@ -31,7 +31,9 @@ function TVProduct() {
     </div>
     <div>
     <div className='data_name'> {data.name}
-    <p className='data_air'>{data.first_air_date}</p>
+    <p className='data_air'>{data.first_air_date}
+        <span onClick={()=>favoriteList(data.poster_path)}><FavoriteIcon style={favor.includes(data.poster_path)?{color: 'red'}:{color: 'lightgrey'}} /></span>
+        </p>
     </div>
     </div>
     </div>
