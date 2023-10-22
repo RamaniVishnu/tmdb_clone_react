@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom';
 import axios from "axios";
 import Shimmer from '../Shimmer/Shimmer';
 import FavoriteIcon from '@mui/icons-material/Favorite';
+import { addItem, removeItem } from '../../store/favouriteSlice';
+import { useDispatch, useSelector } from 'react-redux';
 
 function TVProduct() {
     const [data,setData] = useState([])
