@@ -6,6 +6,11 @@ import FavoriteIcon from '@mui/icons-material/Favorite';
 
 function TVProduct() {
     const [data,setData] = useState([])
+
+    const dispatch = useDispatch();
+    const favor=useSelector((store)=>store.favouriteSlice.items);
+
+
     useEffect(()=>{
         axios.get("https://api.themoviedb.org/3/tv/airing_today?api_key=23b2395d981664980812d2c0a1ebd44e&language=en-US&page=1")
         .then((response)=>{
@@ -18,6 +23,14 @@ function TVProduct() {
             console.log(error);
         })
     },[])
+
+    function favoriteList(poster){
+        if(favor.includes(poster)){
+            dispatch(removeItem(poster))
+        } else{
+            dispatch(addItem(poster))
+        }
+    }
 
     return (data.length > 1? <>
     <div className='movie_detail'>
