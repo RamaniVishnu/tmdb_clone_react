@@ -6,7 +6,7 @@ import { addItem, removeItem } from '../../store/favouriteSlice';
 import { useDispatch, useSelector } from 'react-redux';
 import {IMAGE_PATH} from '../../utils/Constant';
 import Shimmer from '../Shimmer/Shimmer';
-import _defaultImg from '../../assets/default_image.jpg'
+import _defaultImg from '../../assets/default_image.jpg';
 import FavoriteIcon from '@mui/icons-material/Favorite';
 
 function Products(){
@@ -35,7 +35,7 @@ function Products(){
 
     function nameEllipsis(name){
         if(name.length >= 15){
-            return name.substring(0,20)+"...";
+            return name.substring(0,17)+"...";
         } else {
             return name;
         }
