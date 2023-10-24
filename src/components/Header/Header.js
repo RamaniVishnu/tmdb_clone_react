@@ -31,14 +31,14 @@ function Header() {
   <li value="airing-today">Airing Today</li>
 </ul>
 
-<select className="selection"  name="movie" id="movies">
-<option value="People" selected disabled hidden>People</option>
-  <option value="popular"> Popular People</option> 
-  <option value="bible">Contribution</option>
-  <option value="apps">Apps</option>
-  <option value="support">Support</option>
-  <option value="about">About</option>
-</select>
+<ul className="selection"  name="movie" id="movies">
+<li value="People" selected disabled hidden>People</li>
+  <li value="popular"> Popular People</li> 
+  <li value="bible">Contribution</li>
+  <li value="apps">Apps</li>
+  <li value="support">Support</li>
+  <li value="about">About</li>
+</ul>
 <select className="selection" name="more" id="moreval">
 <option value="More" selected disabled hidden>More</option>
 <option value="discussions">Discussions</option>
