@@ -15,21 +15,21 @@ function Header() {
     <div className='nav_items'>
       
 
-<select className="selection" name="movie" id="movies">
+<ul className="selection" name="movie" id="movies">
 
-<option value="Browse" selected hidden>Movies</option>
-  <option value="popular">Popular</option>
-  <option value="top-rated">Top Rated</option>
-  <option value="upcoming">Upcoming</option>
-  <option value="now-playing">Now playing</option>
-</select>
-<select className="selection" >
-<option value="TV Shows" selected disabled hidden>TV Shows</option>
-  <option value="popular">Popular</option>
-  <option value="top-rated">Top Rated</option>
-  <option value="on-tv">On Tv</option>
-  <option value="airing-today">Airing Today</option>
-</select>
+<li value="Browse" selected hidden>Movies</li>
+  <li value="popular">Popular</li>
+  <li value="top-rated">Top Rated</li>
+  <li value="upcoming">Upcoming</li>
+  <li value="now-playing">Now playing</li>
+</ul>
+<ul className="selection" >
+<li value="TV Shows" selected disabled hidden>TV Shows</li>
+  <li value="popular">Popular</li>
+  <li value="top-rated">Top Rated</li>
+  <li value="on-tv">On Tv</li>
+  <li value="airing-today">Airing Today</li>
+</ul>
 
 <select className="selection"  name="movie" id="movies">
 <option value="People" selected disabled hidden>People</option>
