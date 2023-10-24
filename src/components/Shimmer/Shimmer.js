@@ -4,7 +4,7 @@ import './Shimmer.scss'
 function Shimmer() {
   return (
     <div className='shimmer_layer'>
-    {Array(22).fill('').map((e)=><div className='cards'></div>)}
+    {Array(20).fill('').map((e)=><div className='cards'></div>)}
     </div>
   )
 }

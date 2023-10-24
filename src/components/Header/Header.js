@@ -15,30 +15,30 @@ function Header() {
     <div className='nav_items'>
       
 
-<select className="selection" name="movie" id="movies">
+<ul className="selection" name="movie" id="movies">
 
-<option value="Browse" selected hidden>Movies</option>
-  <option value="popular">Popular</option>
-  <option value="top-rated">Top Rated</option>
-  <option value="upcoming">Upcoming</option>
-  <option value="now-playing">Now playing</option>
-</select>
-<select className="selection" >
-<option value="TV Shows" selected disabled hidden>TV Shows</option>
-  <option value="popular">Popular</option>
-  <option value="top-rated">Top Rated</option>
-  <option value="on-tv">On Tv</option>
-  <option value="airing-today">Airing Today</option>
-</select>
+<li value="Browse" selected hidden>Movies</li>
+  <li value="popular">Popular</li>
+  <li value="top-rated">Top Rated</li>
+  <li value="upcoming">Upcoming</li>
+  <li value="now-playing">Now playing</li>
+</ul>
+<ul className="selection" >
+<li value="TV Shows" selected disabled hidden>TV Shows</li>
+  <li value="popular">Popular</li>
+  <li value="top-rated">Top Rated</li>
+  <li value="on-tv">On Tv</li>
+  <li value="airing-today">Airing Today</li>
+</ul>
 
-<select className="selection"  name="movie" id="movies">
-<option value="People" selected disabled hidden>People</option>
-  <option value="popular"> Popular People</option> 
-  <option value="bible">Contribution</option>
-  <option value="apps">Apps</option>
-  <option value="support">Support</option>
-  <option value="about">About</option>
-</select>
+<ul className="selection"  name="movie" id="movies">
+<li value="People" selected disabled hidden>People</li>
+  <li value="popular"> Popular People</li> 
+  <li value="bible">Contribution</li>
+  <li value="apps">Apps</li>
+  <li value="support">Support</li>
+  <li value="about">About</li>
+</ul>
 <select className="selection" name="more" id="moreval">
 <option value="More" selected disabled hidden>More</option>
 <option value="discussions">Discussions</option>
