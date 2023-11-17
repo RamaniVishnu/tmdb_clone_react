@@ -3,6 +3,10 @@
     background-image: linear-gradient(to right, rgba(3,37,65, 0.8) 0%, rgba(3,37,65, 0) 100%), url("https://www.themoviedb.org/t/p/w1920_and_h600_multi_faces_filter(duotone,00192f,00baff)/zqkmTXzjkAgXmEWLRsY4UpTWCeo.jpg");
     height: 300px;
     position: relative;
+
+    @media screen and (min-width:375px) and (max-width: 767px) {
+        height: 200px;
+    }
     .Banner {
         
     .Banner_image{
@@ -14,16 +18,52 @@
         position: absolute;
     left: 5%;
     top: 25%;
+
+    @media screen and (min-width:375px) and (max-width: 767px) {
+        width: 350px;
+        top: 15%;
+    left: 3%;
+    }
+     h2{
+        font-size: 3em;
+        color: white;
+        font-weight: 700;
+
+        @media screen and (min-width:375px) and (max-width: 767px) {
+            font-size: 2em;
+        }
+     }
+     h3{
+        font-size: 2em;
+        color: white;
+        font-weight: 400;
+
+        @media screen and (min-width:375px) and (max-width: 767px) {
+            font-size: 1em;
+        }
+     }
+
     }
     .Banner_form{
         display: flex;
         width: 1230px;
         height: 76px;
+
+        @media screen and (min-width:375px) and (max-width: 767px) {
+            width: 360px;
+    margin-top: 10px;
+        }
+
         .Banner_form_input{
             border-radius: 50px;
-           
             width: 1230px;
-    height: 45px;
+            height: 45px;
+
+            @media screen and (min-width:375px) and (max-width: 767px) {
+                width: 350px;
+                height: 35px;
+            }
+            
         }
         .search-list{
             margin-top: 10px;
@@ -31,6 +71,10 @@
             width: 1150px;
             background-color: #fff;
             color: black;
+
+            @media screen and (min-width:375px) and (max-width: 767px) {
+                width: 300px;
+            }
 
             .select-elem{
                padding: 5px;
@@ -55,18 +99,16 @@
             height: 50px;
             border-radius: 26px;
             background: linear-gradient(to right, rgba(30,213,169, 1) 0%, rgba(1,180,228, 1) 100%);
+        
+        
+            @media screen and (min-width:375px) and (max-width: 767px) {
+                width: 70px;
+    height: 40px;
+    right: -6px;
+    font-weight: 400;
+            }
+        
         }
     }
 }
-}
-.title_form h2{
-    font-size: 3em;
-    color: white;
-    font-weight: 700;
-}
-
-.title_form h3{
-    font-size: 2em;
-    color: white;
-    font-weight: 400;
 }
