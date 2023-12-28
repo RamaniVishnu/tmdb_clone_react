@@ -26,26 +26,29 @@ function Footer() {
   return (
     <div className='Footer'>
      <div className='footer_items'>
-     <div className='items'><h3>THE BASICS</h3>
+     <div className='items'>THE BASICS
      {
-        Basics.map((elem,id)=> <div className="item_list"><h4 key={id}>{elem}</h4></div> )
+        Basics.map((elem,id)=> <p key={id}>{elem}</p> )
     }
     </div>
-    <div className='items'><h3>GET INVOLVED</h3>
+    <div className='items'>GET INVOLVED
      {
-        Involved.map((elem,id)=> <div className="item_list"><h4 key={id}>{elem}</h4></div> )
+        Involved.map((elem,id)=> <p key={id}>{elem}</p> )
     }
     </div>
-    <div className='items'><h3>COMMUNITY</h3>
+    <div className='items'>COMMUNITY
      {
-        Community.map((elem,id)=> <div className="item_list"><h4 key={id}>{elem}</h4></div> )
+        Community.map((elem,id)=> <p key={id}>{elem}</p> )
     }
     </div>
-    <div className='items'><h3>LEGAL</h3>
+    <div className='items'>LEGAL
      {
-        Legal.map((elem,id)=> <div className="item_list"><h4 key={id}>{elem}</h4></div> )
+        Legal.map((elem,id)=> <p key={id}>{elem}</p> )
     }
     </div>
+    </div>
+    <div style={{margin: '3% auto',color: 'white'}}>
+        <p> &copy; copyright by Ramani</p>
     </div>
 
     </div>

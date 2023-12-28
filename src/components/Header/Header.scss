@@ -1,17 +1,60 @@
 .header{
     display: flex;
-    height: 60px;
-    border: 1px solid black;
+    height: 64px;
+    width: 100%;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     background-color: #032541;
-    .nav_items{
+
+    @media screen and (min-width:363px) and (max-width: 767px)  {
+        display: flex;
+        height: 64px;
+    }
+
+    .content{
+        display: flex;
+        justify-content: space-between;
+        margin-left: 15px;
+
+
+        @media screen and (min-width:363px) and (max-width: 767px)  {
+            display: flex;
+            width: 365px;
+            justify-content: space-between;
+            
+        }
+    }
+    .desktoplogo{
+        @media screen and (min-width:363px) and (max-width: 767px) {
+            display: none;
+        }
+    }
+    .logo{
+        display: none;
+        @media screen and (min-width:363px) and (max-width: 767px)  {
+            display: block;
+            height: 40px;
+
+            & a {
+                display: flex;
+                height: 40px;
+                width: 111px;
+                justify-content: center;
+            }
+            
+        }
+    }
+    .desktopnav_items{
         display: flex;
         justify-content: space-evenly;
-    width: 50%;
+        width: 50%;
         margin-right: 16px;
         margin-left: 20px;
         color: white;
+
+        @media screen and (min-width:363px) and (max-width: 767px){
+            display: none;
+        }
 
         .selection{
             display: block;
@@ -22,19 +65,89 @@
             appearance: none;
             outline: none;
             font-size: 26px;
-    font-weight: 600;
+            font-weight: 600;
         }
-    }
+    }    
+
+
     .login{
         margin-right: 20px;
-    height: 50px;
-    width: 60px;
+        height: 50px;
+        width: 60px;
+        position: relative;
+        right: -25%;
+
+    @media screen and (min-width:363px) and (max-width:767px){
+        margin-right: 10px;
+        width: 30px;
+        position: static;
+    }
+
+    }
+    nav{
+        display: none;
+        @media screen and (min-width:363px) and (max-width:767px){
+            display: inline-block;
+            position: relative;
+        }
+    }
+
+    .mob_header{
+        @media screen and (min-width: 363px) and (max-width: 767px) {
+            display: inline-block;
+            margin-top: 42px;
+            position: absolute;
+            z-index: 9999;
+            top: 25%;
+            height: 667px;
+            width: 297px;
+            top: 25%;
+            left: -5px;
+            background-color: #032541;
+            color: #fff;
+        }
+
+        & > ul{   
+             
+            padding-left: 0;
+            margin-left: -20px;
+            font-size: 20px;
+            font-weight: 800;
+            margin-bottom: 40px;
+
+            li {
+                font-size: 16px;
+                font-weight: 400;
+                list-style-type: none;
+                margin-bottom: 10px;
+                padding-left: 10px;
+
+            }
+        }
+    }
+
+    .nav_tabs {
+        width: 30px;
+        margin-right: 10px;
+        color: white;
+        font-size: 30px;
     }
     
     .favourite{
         color: white;
         display: flex;
-    text-decoration: none;
+        text-decoration: none;
+        margin-top: 15px;
+        position: relative;
+        right: -25%;
+
+    @media screen and (min-width: 363px) and (max-width: 767px) {
+        width: 50px;
+        justify-content: center;
+        align-items: center;
+        margin-top: 5px;
+        position: static;
+    }
     }
     .fcount{
     color: white;
@@ -47,6 +160,9 @@
     text-align: center;
     height: 20px;
     text-decoration: none;
+
+
+    @media screen and (min-width: 363px) and (max-width: 767px) {margin-top: -20px;}
         }
 }
 
@@ -55,17 +171,62 @@
     font-weight: 600;
     margin-top: 2px;
 }
-
-.login button {
-    height: 50px;
-    border-radius: 20px;
-    width: 60px;
+select{
+border-radius: 30px;
+background-color: aqua;
 }
-
 select option {
-    background-color: white;
+    background-color: pink;
     color: black;
     font-size: 20px;
     width: 200px;
+    border-radius: 30px;
 
 }
+
+
+.desktopNav{
+    display: flex;
+    @media screen and (min-width: 363px) and (max-width: 767px) {
+        display: none;
+    }
+    .custom-dropdown {
+        width: 150px;
+        position: relative;
+        color: #fff;
+        display: flex;
+      }
+      
+      .selected-item {
+        padding: 10px;
+        cursor: pointer;
+        color: #fff;
+      }
+      
+      .dropdown-list {
+        border-radius: 7px;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        background-color: #fff;
+        // display: none;
+        position: absolute;
+        width: 155px;
+        top:85%;
+        border: 1px solid #ccc;
+        color: #000;
+        z-index: 99999;
+      }
+      
+      .dropdown-list li {
+        padding: 10px;
+        cursor: pointer;
+      }
+      
+      .dropdown-list li:hover {
+        background-color: #ddd;
+      }
+      
+  }
+  
+  
