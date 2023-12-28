@@ -22,7 +22,7 @@ function Favourite(){
     padding: "5px"}} onClick={()=>dispatch(removeItem(data))}><CloseIcon 
         style={{backgroundColor: "white",borderRadius: "50%",width: "26px",border: "1px solid #959595",fontSize: "25px"}}/><p style={{margin: "0 3px 0 5px",
     color: "#959595",
-    fontSize: "20px"}}>Remove</p></button></div>): <div style={{height:"500px",justifyContent:"center",display:"flex",margin:"auto"}}><img src={Wishlist} alt="imaaaa" /></div>}
+    fontSize: "20px"}}>Remove</p></button></div>): <div className="empty_wishlist"><img src={Wishlist} alt="widhlist" style={{width: '80%',height: '85%'}}/></div>}
         </div>
         <Footer />
         </>
