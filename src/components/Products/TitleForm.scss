@@ -1,20 +1,14 @@
 .Banner_wrapper{
-    //background-image: url('https://www.themoviedb.org/t/p/w1920_and_h600_multi_faces_filter(duotone,00192f,00baff)/VlHt27nCqOuTnuX6bku8QZapzO.jpg');
     background-image: linear-gradient(to right, rgba(3,37,65, 0.8) 0%, rgba(3,37,65, 0) 100%), url("https://www.themoviedb.org/t/p/w1920_and_h600_multi_faces_filter(duotone,00192f,00baff)/zqkmTXzjkAgXmEWLRsY4UpTWCeo.jpg");
     height: 300px;
+    width: 100%;
     position: relative;
 
     @media screen and (min-width:375px) and (max-width: 767px) {
-        height: 200px;
-    }
-    .Banner {
-        
-    .Banner_image{
-       
-    height: 300px;
-    width: 1220px;
+        height: 300px;
     }
     .title_form{
+        width: 90%;
         position: absolute;
     left: 5%;
     top: 25%;
@@ -30,7 +24,9 @@
         font-weight: 700;
 
         @media screen and (min-width:375px) and (max-width: 767px) {
-            font-size: 2em;
+            font-size: 3em;
+            width: 335px;
+    height: 48px;
         }
      }
      h3{
@@ -39,41 +35,43 @@
         font-weight: 400;
 
         @media screen and (min-width:375px) and (max-width: 767px) {
-            font-size: 1em;
+            font-weight: 600;
         }
      }
 
     }
     .Banner_form{
         display: flex;
-        width: 1230px;
+        width: 90%;
         height: 76px;
 
         @media screen and (min-width:375px) and (max-width: 767px) {
-            width: 360px;
+            width: 340px;
     margin-top: 10px;
         }
 
         .Banner_form_input{
             border-radius: 50px;
-            width: 1230px;
+            width: 90%;
             height: 45px;
 
             @media screen and (min-width:375px) and (max-width: 767px) {
-                width: 350px;
+                width: 335px;
                 height: 35px;
             }
             
         }
         .search-list{
-            margin-top: 10px;
+            margin-top: 3%;
             border-radius: 20px;
-            width: 1150px;
+            width: 90%;
             background-color: #fff;
             color: black;
 
             @media screen and (min-width:375px) and (max-width: 767px) {
                 width: 300px;
+                z-index: 2;
+                position: relative;
             }
 
             .select-elem{
@@ -94,7 +92,7 @@
     font-weight: 800;
             position: absolute;
             border: unset;
-            right: -7px;
+            right: 5%;
             width: 100px;
             height: 50px;
             border-radius: 26px;
@@ -104,11 +102,11 @@
             @media screen and (min-width:375px) and (max-width: 767px) {
                 width: 70px;
     height: 40px;
-    right: -6px;
+    right: 4px;
     font-weight: 400;
             }
         
         }
     }
-}
+
 }

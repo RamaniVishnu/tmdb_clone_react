@@ -50,12 +50,12 @@ function Products(){
     <div className='card_wrapper'>
     <div className='percentage'>
     <p className='rating'>
-    {data.vote_average} 
+    {Math.floor(data.vote_average)} 
     </p>
     </div>
     <div>
     <div className='data_name'> {nameEllipsis(data.name)}
-    <p className='data_air'>{data.first_air_date} <span onClick={()=>favoriteList(data.poster_path)}><FavoriteIcon style={favor.includes(data.poster_path)?{color: 'red'}:{color: 'lightgrey'}} /></span></p>
+    <p className='data_air'>{data.first_air_date} <span onClick={()=>favoriteList(data.poster_path)}><FavoriteIcon  className='MuiSvgIcon-root' style={favor.includes(data.poster_path)?{color: 'red'}:{color: 'lightgrey'}} /></span></p>
     </div>
     </div>
     </div>

@@ -24,9 +24,8 @@ function Movies() {
         const getData =  ()=>{
              axios.get('https://api.themoviedb.org/3/tv/'+id+'?api_key=23b2395d981664980812d2c0a1ebd44e&language=en-US')
         .then((response)=>{
-            console.log(Object.entries(response.data).map((e) => ( { [e[0]]: e[1] } )));
+            
             setData(Object.entries(response.data).map((e) => ( { [e[0]]: e[1] } )));
-            console.log('state in movies===',data)
             setBackground("https://www.themoviedb.org/t/p/w1920_and_h800_multi_faces" + data[1].backdrop_path);
         })
         .catch((error)=>{
@@ -36,7 +35,7 @@ function Movies() {
     const getVideoData = () => {
         axios.get('https://api.themoviedb.org/3/movie/'+id+'/videos?api_key=23b2395d981664980812d2c0a1ebd44e&language=en-US')
         .then((response)=>{
-            console.log("response of video========",response.data.results[0]);
+            
             setVideoData(()=>response.data.results[0]);
         })
         .catch((error)=>{
@@ -52,7 +51,7 @@ function Movies() {
         const getCast =  ()=>{
              axios.get('https://api.themoviedb.org/3/tv/'+id+'/aggregate_credits?api_key=23b2395d981664980812d2c0a1ebd44e&language=en-US')
         .then((response)=>{
-            console.log("cast======",response.data.cast,id);
+            
             if(response.data.cast && response.data.cast !== '' && response.data.cast.length > 10){
                 response.data.cast.length =10; 
 
