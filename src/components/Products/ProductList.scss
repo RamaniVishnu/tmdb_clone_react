@@ -1,11 +1,22 @@
 .product_header{
     display: flex;
-    padding-left: 20px;
-    padding-right: 20px;
     margin-top: 15px;
+    width: 100%;
+    margin-left: 20px;
+
+    @media screen and (min-width: 363px) and (max-width: 767px){
+        padding-left: 20px;
+        margin-left: 0;
+        width: auto;
+    }
     .popular_header{
-        font-size: 2em;
+        font-size: 1.5em;
         margin-right: 20px;
+
+        @media screen and (min-width: 363px) and (max-width: 767px){
+            width: 46%;
+            font-size: 1.2em;
+        }
     }
     .selector_wrap{
     width: 800px;
@@ -18,12 +29,61 @@
     border-radius: 20px;
     text-decoration: none;
     margin-left: 0;
+
+    @media screen and (min-width: 363px) and (max-width: 767px) {
+        display: none;
+    }
 }
 .anchor{
     margin-left: 3px;
     text-align: center;
     font-weight: 400;
     width: 191px;
+}
+
+.selectorwrap_mob{
+    display: none;
+
+    @media screen and (min-width: 363px) and (max-width: 767px) {
+        background: linear-gradient(to right,rgba(192,254,207
+        ,1) 0%,rgba(30,213,169,1) 100%);
+        border-radius: 20px;
+        width: 40%;
+        height: 30px;
+        margin-top: 0;
+        font-size: 1.2em;
+        font-weight: 600;
+        padding-top: 3px;
+        text-align: center;
+        padding-left: 0;
+        display: block;
+    
+    }
+
+    .MuiSvgIcon-root{
+        @media screen and (min-width: 363px) and (max-width: 767px) {
+            position: absolute;
+            top:10%;
+        }
+    }
+
+    .selector_mob{
+
+        @media screen and (min-width: 363px) and (max-width: 767px) {
+            margin-top: 6px;
+    height: 115px;
+    background: linear-gradient(to right,rgba(192,254,207
+    ,1) 0%,rgba(30,213,169,1) 100%);
+
+    z-index: 222;
+    position: relative;
+        }
+        & a {
+            list-style-type: none;
+    color: black;
+    text-decoration: unset;
+        }
+    }
 }
 }
 
