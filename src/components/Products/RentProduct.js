@@ -48,7 +48,7 @@ function RentProduct(){
     <div className='card_wrapper'>
     <div className='percentage'>
     <p className='rating'>
-    {data.vote_average} 
+    {Math.floor(data.vote_average)} 
     </p>
     </div>
     <div>
