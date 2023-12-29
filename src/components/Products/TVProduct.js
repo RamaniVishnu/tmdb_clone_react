@@ -17,9 +17,9 @@ function TVProduct() {
         axios.get(`https://api.themoviedb.org/3/tv/airing_today?api_key=23b2395d981664980812d2c0a1ebd44e&language=en-US&page=`+pageNum)
         .then((response)=>{
             // setData(response.data.results)
-            console.log('data---',response.data.results);
+           
             setData(response.data.results)
-            console.log('img=====',data.backdrop_path);
+            
         })
         .catch((error)=>{
             console.log(error);
@@ -49,7 +49,7 @@ function TVProduct() {
     <div className='card_wrapper'>
     <div className='percentage'>
     <p className='rating'>
-    {data.vote_average} 
+    {Math.floor(data.vote_average)} 
     </p>
     </div>
     <div>
