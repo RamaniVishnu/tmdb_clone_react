@@ -4,7 +4,7 @@
     margin: 50px;
     min-height: 500px;
 
-    @media screen and (min-width: 363px) and (max-width: 767px){
+    @media screen and (max-width: 767px){
         margin: 0;
         justify-content: space-around;
     }
@@ -14,7 +14,7 @@
     height: 300px;
     margin: 10px 10px 20px 10px;
 
-    @media screen and (min-width: 363px) and (max-width: 767px){
+    @media screen and (max-width: 767px){
         height: 230px;
         width: 150px;
         margin: 0;
@@ -31,7 +31,7 @@
         background: #dbdbdb;
         
 
-        @media screen and (min-width: 363px) and (max-width: 767px){
+        @media screen and (max-width: 767px){
             height: 230px;
             margin: 0;
     margin-top: 3%;
@@ -52,7 +52,7 @@
    display: flex;
    margin: auto;
 
-   @media screen and (min-width: 363px) and (max-width: 767px){
+   @media screen and (max-width: 767px){
     height: auto;
     }
 }
