@@ -4,7 +4,7 @@
     width: 100%;
     position: relative;
 
-    @media screen and (min-width:375px) and (max-width: 767px) {
+    @media screen and (max-width: 767px) {
         height: 300px;
     }
     .title_form{
@@ -13,7 +13,7 @@
     left: 5%;
     top: 25%;
 
-    @media screen and (min-width:375px) and (max-width: 767px) {
+    @media screen and (max-width: 767px) {
         width: 350px;
         top: 15%;
     left: 3%;
@@ -23,7 +23,7 @@
         color: white;
         font-weight: 700;
 
-        @media screen and (min-width:375px) and (max-width: 767px) {
+        @media screen and (max-width: 767px) {
             font-size: 3em;
             width: 335px;
     height: 48px;
@@ -34,7 +34,7 @@
         color: white;
         font-weight: 400;
 
-        @media screen and (min-width:375px) and (max-width: 767px) {
+        @media screen and (max-width: 767px) {
             font-weight: 600;
         }
      }
@@ -45,7 +45,7 @@
         width: 90%;
         height: 76px;
 
-        @media screen and (min-width:375px) and (max-width: 767px) {
+        @media screen and (max-width: 767px) {
             width: 340px;
     margin-top: 10px;
         }
@@ -55,7 +55,7 @@
             width: 90%;
             height: 45px;
 
-            @media screen and (min-width:375px) and (max-width: 767px) {
+            @media screen and (max-width: 767px) {
                 width: 335px;
                 height: 35px;
             }
@@ -68,7 +68,7 @@
             background-color: #fff;
             color: black;
 
-            @media screen and (min-width:375px) and (max-width: 767px) {
+            @media screen and (max-width: 767px) {
                 width: 300px;
                 z-index: 2;
                 position: relative;
@@ -92,14 +92,14 @@
     font-weight: 800;
             position: absolute;
             border: unset;
-            right: 5%;
+            right: 18%;
             width: 100px;
             height: 50px;
             border-radius: 26px;
             background: linear-gradient(to right, rgba(30,213,169, 1) 0%, rgba(1,180,228, 1) 100%);
         
         
-            @media screen and (min-width:375px) and (max-width: 767px) {
+            @media screen and (max-width: 767px) {
                 width: 70px;
     height: 40px;
     right: 4px;
