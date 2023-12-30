@@ -3,14 +3,14 @@
   padding: 5% 0;
   width: 100%;
 
-  @media screen and (min-width: 363px) and (max-width: 767px) {
+  @media screen and (max-width: 767px) {
     height: auto;
   }
   .header_column{
     display: flex;
     margin: 5% 5%;
 
-    @media screen and (min-width: 363px) and (max-width: 767px) {
+    @media screen and (max-width: 767px) {
       display: flex;
       flex-direction: column;
       width: 100%;
@@ -21,7 +21,7 @@
         padding-left: 40px;
 
 
-        @media screen and (min-width: 363px) and (max-width: 767px) {
+        @media screen and (max-width: 767px) {
           height: 60%;
           width: 80%;
           padding: 20px 40px;
@@ -33,7 +33,7 @@
     height: 45px;
     font-size: 32px;
 
-    @media screen and (min-width: 363px) and (max-width: 767px) {
+    @media screen and (max-width: 767px) {
       font-size: 1.5em;
       height: auto;
     }
@@ -48,7 +48,7 @@
           height: 100px;
           width: 430px;
 
-          @media screen and (min-width: 363px) and (max-width: 767px) {
+          @media screen and (max-width: 767px) {
             width: 100%;
           }
   .rating{
@@ -67,7 +67,7 @@
     border-radius: 50px;
     display: flex;
 
-    @media screen and (min-width: 363px) and (max-width: 767px) {
+    @media screen and (max-width: 767px) {
       width: 3%;
     height: 9%;
     padding: 7%;
@@ -78,7 +78,7 @@
     font-weight: 700;
     margin: -10px 4px 2px 6px;
 
-    @media screen and (min-width: 363px) and (max-width: 767px) {
+    @media screen and (max-width: 767px) {
       margin: -13px 0px -1px -3px;
     font-size: 1.5em;
     }
@@ -91,7 +91,7 @@
     font-size: 16px;
     font-weight: 700;
 
-    @media screen and (min-width: 363px) and (max-width: 767px) {
+    @media screen and (max-width: 767px) {
       width: 10%;
       margin: 9% 0;
       height: 20%;
@@ -103,7 +103,7 @@
     width: 300px;
     justify-content: space-around;
 
-    @media screen and (min-width: 363px) and (max-width: 767px) {
+    @media screen and (max-width: 767px) {
       width: 67%;
       margin-left: 6%;
     }
@@ -116,7 +116,7 @@
         height: 46px;
         margin-left: 10px;
     margin-top: 10px;
-      @media screen and (min-width: 363px) and (max-width: 767px){
+      @media screen and (max-width: 767px){
         height: 40px;
         width: 21%;
       }
@@ -124,7 +124,7 @@
       .MuiSvgIcon-root {
         margin-left: 21%;
     margin-top: 20%;
-        @media screen and (min-width: 363px) and (max-width: 767px){
+        @media screen and (max-width: 767px){
           margin-left: 18%;
     margin-top: 19%;
         }
@@ -136,7 +136,7 @@
           color:#fff;
           margin-top: 30px;
 
-          @media screen and (min-width: 363px) and (max-width: 767px){
+          @media screen and (max-width: 767px){
             margin-top: 2%;
           }
           .overview_heading{
@@ -145,14 +145,14 @@
           font-size: 1.3em;
           background-color: #fff;
           width: 87px;
-          @media screen and (min-width: 363px) and (max-width: 767px){
+          @media screen and (max-width: 767px){
             width: 88px;
           }
           }
           .overview_para{
             font-size: 16px;
 
-            @media screen and (min-width: 363px) and (max-width: 767px){
+            @media screen and (max-width: 767px){
               margin: 0;
             }
           }
@@ -163,13 +163,13 @@
       background-color: #fff;
           max-width: 200px;
 
-      @media screen and (min-width: 363px) and (max-width: 767px){
+      @media screen and (max-width: 767px){
         margin-top: 5%;
         max-width: 196px;
       }
       h4{
         background-color: #fff;
-        @media screen and (min-width: 363px) and (max-width: 767px){
+        @media screen and (max-width: 767px){
       margin:0;
       background-color: #fff;
         }
@@ -179,7 +179,7 @@
 
     .card{
         
-      @media screen and (min-width: 363px) and (max-width: 767px) {
+      @media screen and (max-width: 767px) {
         height: 40%;
     width: 50%;
     margin: 0 auto;
@@ -191,7 +191,7 @@
         border-radius: 20px;
         background: linear-gradient(to right, rgba(157.5, 157.5, 157.5, 1) calc((50vw - 170px) - 340px), rgba(157.5, 157.5, 157.5, 0.84) 30%, rgba(157.5, 157.5, 157.5, 0.84) 100%);
         
-        @media screen and (min-width: 363px) and (max-width: 767px) {
+        @media screen and (max-width: 767px) {
           height: 25%;
           width: 96%;
       
@@ -206,7 +206,7 @@
   margin: 50px 0;
   justify-content: space-around;
   width: 100%;
-  @media screen and (min-width: 363px) and (max-width: 767px) {
+  @media screen and (max-width: 767px) {
     margin: 0;
     flex-direction: column;
   }
@@ -215,7 +215,7 @@
     font-weight: 600;
     font-size: 2.4em;
     
-    @media screen and (min-width: 363px) and (max-width: 767px) {
+    @media screen and (max-width: 767px) {
       width: 96%;
       font-size: 22px;
       margin: 15px 20px;
@@ -228,7 +228,7 @@
     margin: 0;
     height: 340px;
     flex-direction: column;
-  @media screen and (min-width: 363px) and (max-width: 767px) {
+  @media screen and (max-width: 767px) {
     width: 90% !important;
     margin: 20px 20px 0 0;
     flex-direction: column;
@@ -244,7 +244,8 @@
 
     margin: 10px;
       height: 220px;
-      @media screen and (min-width: 363px) and (max-width: 767px){margin: 10px;
+      @media screen and (max-width: 767px){
+        margin: 10px;
         height: 190px;
         width: 130px;}
 
@@ -254,7 +255,8 @@
         position: relative;
         background-color: #dbdbdb;
 
-        @media screen and (min-width: 363px) and (max-width: 767px){width: 130px;
+        @media screen and (max-width: 767px){
+          width: 130px;
           height: 170px;
           position: static;
         }
@@ -263,7 +265,7 @@
           width: 138px;
             height: 175px;
 
-            @media screen and (min-width: 363px) and (max-width: 767px){
+            @media screen and (max-width: 767px){
               height: 170px;
               width: 130px;
               
@@ -274,7 +276,7 @@
       .cast_name{
         font-size: 22px;
         h4{
-          @media screen and (min-width: 363px) and (max-width: 767px){
+          @media screen and (max-width: 767px){
             margin: 0;
             font-size: 16px;
           }
@@ -292,7 +294,7 @@
   width: 40%;
   border-radius : 3px;
 
-  @media screen and (min-width: 363px) and (max-width: 767px){
+  @media screen and (max-width: 767px){
     width: 85%;
     border-radius: 3px;
     margin: 0 auto;
@@ -301,7 +303,7 @@
   iframe{
     width: 500;
     height: 315;
-    @media screen and (min-width: 363px) and (max-width: 767px){
+    @media screen and (max-width: 767px){
       border-radius: 15px;
       width: 100%;
       height: 82%;
@@ -333,7 +335,7 @@
   margin: 50px 0;
   justify-content: space-around;
   width: 100%;
-  @media screen and (min-width: 363px) and (max-width: 767px) {
+  @media screen and (max-width: 767px) {
     margin: 0;
     flex-direction: column;
   }
@@ -342,7 +344,7 @@
     font-weight: 600;
     font-size: 2.4em;
     
-    @media screen and (min-width: 363px) and (max-width: 767px) {
+    @media screen and (max-width: 767px) {
       width: 96%;
       font-size: 22px;
       margin: 15px 20px;
@@ -355,7 +357,7 @@
     margin: 0;
     height: 340px;
     flex-direction: column;
-  @media screen and (min-width: 363px) and (max-width: 767px) {
+  @media screen and (max-width: 767px) {
     width: 90% !important;
     margin: 20px 20px 0 0;
     flex-direction: column;
@@ -371,7 +373,8 @@
 
     margin: 10px;
       height: 220px;
-      @media screen and (min-width: 363px) and (max-width: 767px){margin: 10px;
+      @media screen and (max-width: 767px){
+        margin: 10px;
         height: 190px;
         width: 130px;}
 
@@ -381,7 +384,8 @@
         position: relative;
         background-color: #dbdbdb;
 
-        @media screen and (min-width: 363px) and (max-width: 767px){width: 130px;
+        @media screen and (max-width: 767px){
+          width: 130px;
           height: 170px;
           position: static;
         }
@@ -390,7 +394,7 @@
           width: 138px;
             height: 175px;
 
-            @media screen and (min-width: 363px) and (max-width: 767px){
+            @media screen and (max-width: 767px){
               height: 170px;
               width: 130px;
               
@@ -401,7 +405,7 @@
       .cast_name{
         font-size: 22px;
         h4{
-          @media screen and (min-width: 363px) and (max-width: 767px){
+          @media screen and (max-width: 767px){
             margin: 0;
             font-size: 16px;
           }
@@ -419,7 +423,7 @@
   width: 40%;
   border-radius : 3px;
 
-  @media screen and (min-width: 363px) and (max-width: 767px){
+  @media screen and (max-width: 767px){
     width: 85%;
     border-radius: 3px;
     margin: 0 auto;
@@ -428,7 +432,7 @@
   iframe{
     width: 500;
     height: 315;
-    @media screen and (min-width: 363px) and (max-width: 767px){
+    @media screen and (max-width: 767px){
       border-radius: 15px;
       width: 100%;
       height: 82%;
