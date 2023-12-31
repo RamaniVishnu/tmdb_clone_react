@@ -57,7 +57,7 @@ export default function SearchBar(props){
             } else {
             getSearchSuggestion()
             }
-        },100);
+        },170);
 
         return ()=>{
             setshowSuggestion(false);
